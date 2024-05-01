@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAE Visa - Payment Summary</title>
+    <!-- jquery  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- bootstrap css  -->
+    <link rel="stylesheet" href="assets/libs/bootstrap/bootstrap.min.css">
+    <!-- main css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- common css  -->
+    <link rel="stylesheet" href="assets/css/common.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- aos css  -->
+    <link rel="stylesheet" href="assets/libs/aos/aos.css">
+    <!-- swiper js  -->
+    <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css">
+    <!-- glightbox css  -->
+    <link rel="stylesheet" href="assets/libs/glightbox/glightbox.css">
+    <!-- select2 library  -->
+    <link rel="stylesheet" href="assets/libs/select2/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/libs/select2/select2.min.css">
+     <!-- iti input -->
+     <link rel="stylesheet" href="assets/libs/iti/intlTelInput.min.css">
+     <!-- date picker css  -->
+     <link rel="stylesheet" href="assets/libs/datepicker/flatpickr.min.css">
+     <!-- dropzone css  -->
+     <link rel="stylesheet" href="assets/libs/dropzone/dropzone.min.css">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- whatsapp button start -->
+    <a href="" class="whatsapp-btn d-flex align-items-center justify-content-center position-fixed rounded-circle text-decoration-none">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- whatsapp button end  -->
+
+    <!-- scroll to top button start -->
+    <div class="progress-wrap d-block rounded-circle position-fixed">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- scroll to top button end -->
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-xl fixed-top navbar-two" id="navbar" aria-label="Offcanvas navbar large">
+        <div class="container">
+            <a class="navbar-logo" href="index.html">
+                <img src="assets/img/logo.png" alt="logo" class="h-100 w-100 img-fluid">
+            </a> 
+            <div class="offcanvas nav-offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header border-bottom">
+                    <div class="offcanvas-logo" id="offcanvasNavbar2Label">
+                        <img src="assets/img/logo.png" alt="logo" class="h-100 w-100 img-fluid">
+                    </div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link overflow-hidden position-relative text-nowrap active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link overflow-hidden position-relative text-nowrap" aria-current="page" href="document-reuquired.html">Documents Required</a>
+                        </li>
+                        <li class="nav-item position-relative drop-main d-xl-block d-none">
+                            <a class="nav-link overflow-hidden position-relative text-nowrap" href="type-of-visa.html"> 
+                                Visa Types 
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="drop-menu list-unstyled position-absolute bg-white overflow-hidden rounded-1 overflow-y-auto">
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">14 Days Dubai Visa</a></li>
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">14 Days Dubai Visa Multiple Entry</a></li>
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">30 Days Dubai Visa</a></li>
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">30 Days Dubai Visa Multiple Entry</a></li>
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">60 Days Dubai Visa</a></li>
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">60 Days Dubai Visa Multiple Entry</a></li>
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">90 Days Dubai Visa</a></li>
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">90 Days Dubai Visa Multiple Entry</a></li>
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">90 Days Job Seeker Visa</a></li>
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">96 Hours Transit Visa</a></li>
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">48 Hours Transit Visa</a></li>
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">Dubai Transit Visa</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item position-relative dropmain d-xl-none d-block" >
+                            <a class="nav-link overflow-hidden d-flex align-items-center justify-content-between position-relative text-nowrap" href="javascript:;" id="navbtn"> 
+                                Visa Types 
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="drop-menu list-unstyled visible opacity-100 shadow-none h-100 bg-white border overflow-hidden rounded-1 overflow-y-auto mt-2" id="navmenu">
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">14 Days Dubai Visa</a></li>
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">14 Days Dubai Visa Multiple Entry</a></li>
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">30 Days Dubai Visa</a></li>
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">30 Days Dubai Visa Multiple Entry</a></li>
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">60 Days Dubai Visa</a></li>
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">60 Days Dubai Visa Multiple Entry</a></li>
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">90 Days Dubai Visa</a></li>
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">90 Days Dubai Visa Multiple Entry</a></li>
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">90 Days Job Seeker Visa</a></li>
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">96 Hours Transit Visa</a></li>
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">48 Hours Transit Visa</a></li>
+                                <li><a href="14-days-dubai-visa.html" class="drop-link text-nowrap text-decoration-none fw-semibold d-block position-relative border-bottom">Dubai Transit Visa</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link overflow-hidden position-relative text-nowrap" href="visa-application-form.html">UAE Application Form</a>
+                        </li>
+                        <li class="nav-item">   
+                            <a class="nav-link overflow-hidden position-relative text-nowrap" href="how-to-apply.html"> How To Apply </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link overflow-hidden position-relative text-nowrap" href="payment.html"> Payment </a>
+                        </li>
+                        <li class="d-lg-none d-block">
+                            <a href="" class="nav-contact-link nav-contact-link-two text-decoration-none">
+                                <i class="fa-solid fa-phone"></i>
+                                +91 1232323343
+                            </a>
+                        </li>
+                        <li class="d-lg-none d-block">
+                            <a href="" class="nav-contact-link nav-contact-link-two text-decoration-none">
+                                <i class="fa-regular fa-envelope"></i>
+                                info@travejar.com 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <a href="" class="header-content-link rounded-circle d-flex align-items-center justify-content-center text-decoration-none">
+                    <i class="fa-solid fa-phone"></i>
+                    <!-- +91 1232323343 -->
+                </a>
+                <a href="" class="header-content-link rounded-circle d-flex align-items-center justify-content-center text-decoration-none">
+                    <i class="fa-regular fa-envelope"></i>
+                    <!-- info@travejar.com  -->
+                </a>
+                <button class="navbar-toggler shadow-none d-xl-none d-flex align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                   <img src="assets/img/menuicon.svg" alt="menu" class="h-100 w-100 img-fluid">
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- payment detail section start -->
+    <section class="common-gap payment-detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="heading-main text-center">
+                        <div class="heading position-relative">
+                            Payment Detail
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-md-4 mt-3">
+                <div class="col-lg-8">
+                    <div class="payment-detail-card rounded-3 border">
+                        <div class="payment-detail-header d-flex flex-md-row flex-column border-bottom align-items-md-center justify-content-between">
+                            <div class="payment-detail-heading">
+                                Confirm or edit your order
+                            </div>
+                            <div class="payment-price-total text-end mt-sm-0 mt-1">
+                                Order Total : GBP 319   
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table align-middle text-nowrap">
+                                <thead>
+                                    <tr class="bg-light">
+                                        <th scope="col" class="bg-transparent">#</th>
+                                        <th scope="col" class="bg-transparent"> Name</th>
+                                        <th scope="col" class="bg-transparent">Mobile No.</th>
+                                        <th scope="col" class="bg-transparent">Email   </th>
+                                        <th scope="col" class="bg-transparent">Action   </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">1</td>
+                                        <td>dfdfd dfdfd</td>
+                                        <td>914545454555</td>
+                                        <td>demo@gmai.com</td>
+                                        <td>
+                                            <button class="edit-btn border-0 text-decoration-none d-flex align-items-center"  data-bs-toggle="modal" data-bs-target="#editmodal">
+                                                <i class="fa-solid fa-user-pen"></i>
+                                                Edit
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">1</td>
+                                        <td>dfdfd dfdfd</td>
+                                        <td>914545454555</td>
+                                        <td>demo@gmai.com</td>
+                                        <td>
+                                            <button class="edit-btn border-0 text-decoration-none d-flex align-items-center"  data-bs-toggle="modal" data-bs-target="#editmodal2">
+                                                <i class="fa-solid fa-user-pen"></i>
+                                                Edit
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="payment-detail-card mt-4 rounded-3 border">
+                        <div class="payment-detail-header d-flex border-bottom align-items-center justify-content-between">
+                            <div class="payment-detail-heading">
+                                Order Summary
+                            </div>
+                        </div>
+                        <div class="payment-detail-body">
+                            <div class="d-flex align-items-center justify-content-between payment-detail-data">
+                                <div class="payment-detail-title">
+                                    Visa Type
+                                </div>
+                                <div class="payment-detail-title-two">
+                                    60 Days Visa Multiple Entry
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between payment-detail-data">
+                                <div class="payment-detail-title">
+                                    QTY
+                                </div>
+                                <div class="payment-detail-title-two">
+                                    1 @ 530
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between payment-detail-data">
+                                <div class="payment-detail-title">
+                                    Price
+                                </div>
+                                <div class="payment-detail-title-two">
+                                    530
+                                </div>
+                            </div>
+                            <div class="payment-inner-heading border-top mt-2">
+                                Add to your order ?
+                            </div>
+                            <div class="row mt-2 gx-3 gap-md-0 gap-2">
+                                <div class="col-md-6 ">
+                                    <input type="checkbox" hidden id="express-service" class="payment-detail-input">
+                                    <label class="payment-check-card bg-light d-flex" for="express-service">
+                                        <div class="express-check rounded-circle d-flex align-items-center justify-content-center">  
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                        <div class="w-100">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="payment-check-title">
+                                                    Express Service
+                                                </div>
+                                                <div class="payment-check-price">140 GBP</div>
+                                            </div>
+                                            <p class="mb-0 payment-check-para">
+                                                Get Your Order in 12 Hours
+                                            </p>
+                                        </div>
+                                    </label>
+
+                                </div>
+                                <div class="col-md-6 ">
+                                    <input type="checkbox" hidden id="insurance" class="payment-detail-input">
+                                    <label class="payment-check-card bg-light d-flex" for="insurance">
+                                        <div class="express-check rounded-circle d-flex align-items-center justify-content-center">  
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                        <div class="w-100">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="payment-check-title">
+                                                    Insurance
+                                                </div>
+                                                <div class="payment-check-price">50 GBP</div>
+                                            </div>
+                                            <p class="mb-0 payment-check-para">
+                                                Get you Instant Medical Travel Insurance
+                                            </p>
+                                        </div>
+                                    </label>
+
+                                </div>
+                            </div>
+                            <div class="payment-total-main bg-light border rounded-1 d-flex align-items-center justify-content-between">
+                                <div class="payment-total-title">
+                                    Total
+                                </div>
+                                <div class="payment-total-price">
+                                    580 USD
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-lg-0 mt-4">
+                    <div class="payment-sidebar payment-detail-card rounded-3 border">
+                        <div class="payment-detail-header border-bottom">
+                            <div class="payment-detail-heading">
+                                Select Payment Method
+                            </div>
+                            <p class="payment-detail-subheading mb-0">All transactions are secure and encrypted.</p>
+                        </div>
+                        <form action="">
+                            <div class="payment-detail-body">
+                                <div class="row payment-sidebar-inner">
+                                    <div class="col-12">
+                                        <input type="radio" name="paymentmethod" class="sidebar-input" hidden id="mamopay" checked>
+                                        <label for="mamopay" class="payment-sidebar-card bg-light align-items-center rounded-2 w-100 d-flex">
+                                            <span class="payment-sidebar-check rounded-circle d-flex align-items-center justify-content-center position-relative">
+                                                <img src="assets/img/checkbox.svg" alt="check" >
+                                            </span>
+                                            <img src="assets/img/mamo-pay-icon.webp" alt="mamo pay" class="">
+                                        </label>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="radio" name="paymentmethod" class="sidebar-input" hidden id="network">
+                                        <label for="network" class="payment-sidebar-card bg-light align-items-center rounded-2 w-100 d-flex">
+                                            <span class="payment-sidebar-check rounded-circle d-flex align-items-center justify-content-center position-relative">
+                                                <img src="assets/img/checkbox.svg" alt="check" >
+                                            </span>
+                                            <img src="assets/img/network_gateway_icon.webp" alt="network" class="">
+                                        </label>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="radio" name="paymentmethod" class="sidebar-input" hidden id="ccavenue">
+                                        <label for="ccavenue" class="payment-sidebar-card bg-light align-items-center rounded-2 w-100 d-flex">
+                                            <span class="payment-sidebar-check rounded-circle d-flex align-items-center justify-content-center position-relative">
+                                                <img src="assets/img/checkbox.svg" alt="check" >
+                                            </span>
+                                            <img src="assets/img/ccavenue_icon.webp" alt="ccavenue" class="">
+                                        </label>
+                                    </div>
+
+                                </div>
+                                <div class="mt-2">
+                                    <input type="checkbox" id="paymentagreement">
+                                    <label for="paymentagreement" class="payment-sidebar-terms">I Agree To <a href="terms-and-condition.html" class="text-decoration-none fw-semibold"> Terms Of Agreement</a></label>
+                                </div>
+                                <div class="d-flex align-items-center mt-3 justify-content-center">
+                                    <a href="" class="theme-btn w-100 shadow-sm text-nowrap d-inline-flex w-auto rounded-5 justify-content-center align-items-center">
+                                        Pay With Debit Card/Credit Card <i class="fa-solid fa-angles-right"></i>    
+                                    </a>
+                                </div>
+                                <div class="payment-sidebar-trusted border-top text-center ">
+                                    <i class="fa-solid fa-globe"></i> Trusted by more than 1000000+ customer globallay
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- payment detail section end -->
+
+    <!-- partners section start -->
+    <section class="partner-section common-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="heading-main text-center">
+                        <div class="heading position-relative">
+                            Partners we work with
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-lg-6 row-cols-md-4 row-cols-2 g-3 mt-md-2 mt-1">
+                <div class="col">
+                    <div class="partner-card border">
+                        <img src="assets/img/partner-1.webp" alt="partner" class="h-100 w-100 img-fluid">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="partner-card border">
+                        <img src="assets/img/partner-2.webp" alt="partner" class="h-100 w-100 img-fluid">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="partner-card border">
+                        <img src="assets/img/partner-3.webp" alt="partner" class="h-100 w-100 img-fluid">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="partner-card border">
+                        <img src="assets/img/partner-4.webp" alt="partner" class="h-100 w-100 img-fluid">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="partner-card border">
+                        <img src="assets/img/partner-5.webp" alt="partner" class="h-100 w-100 img-fluid">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="partner-card border">
+                        <img src="assets/img/partner-6.webp" alt="partner" class="h-100 w-100 img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- partners section end -->
+
+    <!-- footer section start  -->
+    <div class="footer-cta common-gap">
+        <div class="container">
+            <div class="row gap-md-0 gap-2">
+                <div class="col-md">
+                    <div class="footer-cta-title text-md-start text-center">Get connected with us on social networks:</div>
+                </div>
+                <div class="col-md-auto mt-md-0 mt-1">
+                    <div class="cta-social-media d-flex align-items-center justify-content-center">
+                        <a href="" class="cta-social text-decoration-none rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="" class="cta-social text-decoration-none rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="" class="cta-social text-decoration-none rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+                        <a href="" class="cta-social text-decoration-none rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a> 
+                        <a href="" class="cta-social text-decoration-none rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-section footer position-relative">
+        <div class="container">
+            <div class="footer-content">
+                <div class="row g-4">
+                    <div class="col-xl-3 col-lg-4">
+                        <div class="footer-widget">
+                            <div class="footer-logo d-flex align-items-center justify-content">
+                                <img src="assets/img/logo.png" class="img-fluid h-100" alt="logo">
+                            </div>
+                            <div class="footer-text">
+                                <p class="mb-0">Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-4 col-md-6">
+                        <div class="row g-4">
+                            <div class="col-sm-7">
+                                <div class="footer-widget">
+                                    <h3 class="footer-heading position-relative">QUICK LINKS</h3>
+                                    <ul class="list-unstyled mb-0 footer-list d-flex flex-column">
+                                        <li><a href="type-of-visa.html" class="footer-link text-decoration-none d-inline-block">Types of Visa </a></li>
+                                        <li><a href="track.html" class="footer-link text-decoration-none d-inline-block"> Track UAE Visa Status </a></li>
+                                        <li><a href="eligible-country.html" class="footer-link text-decoration-none d-inline-block">Eligible Countries </a></li>
+                                        <li><a href="uae-visa-gcc-residents.html" class="footer-link text-decoration-none d-inline-block"> Uae Visa for GCC Residents </a></li>
+                                        <li><a href="blog.html" class="footer-link text-decoration-none d-inline-block"> Blogs </a></li>
+                                        <li><a href="contactus.html" class="footer-link text-decoration-none d-inline-block"> Contact Us </a></li>
+                                        <li><a href="aboutus.html" class="footer-link text-decoration-none d-inline-block"> About Us </a></li>
+                                        <li><a href="terms-and-condition.html" class="footer-link text-decoration-none d-inline-block"> Terms and Condition</a></li>
+                                        <li><a href="privacy-policy.html" class="footer-link text-decoration-none d-inline-block"> Privacy Policy </a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="footer-widget">
+                                    <h3 class="footer-heading position-relative">USEFUL LINKS</h3>
+                                    <ul class="list-unstyled mb-0 footer-list d-flex flex-column">
+                                        <li><a href="fujairah-visa.html" class="footer-link text-decoration-none d-inline-block">Fujairah Visa</a></li>
+                                        <li><a href="" class="footer-link text-decoration-none d-inline-block">Emirates Visa</a></li>
+                                        <li><a href="" class="footer-link text-decoration-none d-inline-block">Fujairah Visa</a></li>
+                                        <li><a href="" class="footer-link text-decoration-none d-inline-block">Umm Al-Quwain Visa</a></li>
+                                        <li><a href="" class="footer-link text-decoration-none d-inline-block">Ras Al-Khaimah Visa</a></li>
+                                        <li><a href="" class="footer-link text-decoration-none d-inline-block">UAE Visa</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 ps-md-5">
+                        <div class="footer-widget">
+                            <h3 class="footer-heading position-relative">GET IN TOUCH</h3>
+                            <ul class="footer-contact-list list-unstyled d-flex flex-column mb-0">
+                                <li>
+                                    <a href="" class="footer-contact text-decoration-none d-flex align-items-center">
+                                        <span class="contact-icon d-flex align-items-center justify-content-center rounded-circle">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </span>
+                                        +44 2080049605  
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer-contact text-decoration-none d-flex align-items-center">
+                                        <span class="contact-icon d-flex align-items-center justify-content-center rounded-circle">
+                                            <i class="fa-regular fa-envelope"></i>
+                                        </span>
+                                        info@onlinedubaivisa.com
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer-contact text-decoration-none d-flex">
+                                        <span class="contact-icon d-flex align-items-center justify-content-center rounded-circle">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </span>
+                                        106, Building-4, Al Suq Al Kabeer, Opp. Concorde Palace Hotel, Bur Dubai, Dubai, UAE
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>   
+    <div class="copyright-section border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="copyright-text">
+                        <p class="mb-0">Copyright &copy; 2024, All Right Reserved    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section end  -->
+    
+    <!-- bootstrap js  -->
+    <script src="assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- main js  -->
+    <script src="assets/js/index.js"></script>
+    <!-- aos library js  -->
+    <script src="assets/libs/aos/aos.js"></script>
+    <!-- swiper js  -->
+    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+    <!-- swiper js  -->
+    <script src="assets/libs/select2/select2.min.js"></script>
+    <!-- glightbox  -->
+    <script src="assets/libs/glightbox/glightbox.js"></script>
+    <!-- iti input -->
+    <script src="assets/libs/iti/intlTelInput.min.js"></script>
+    <!-- date library js -->
+    <script src="assets/libs/datepicker/flatpickr.js"></script>
+    <!-- dropzone js  -->
+    <script src="assets/libs/dropzone/dropzone.min.js"></script>
+
+    <!-- edit modal  -->
+    <div class="modal fade edit-modal pe-0" id="editmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered mx-auto">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fw-bold" id="exampleModalLabel">Edit Profile</div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <section class="visa-form-section mt-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="visa-form-card bg-light mt-0">
+                                    <div class="form-inner-heading text-center">
+                                        Please Provide The Following Details
+                                    </div>
+                                    <form action="">
+                                        <div class="row mt-md-3 mt-2 g-3">
+                                            <div class="col-md-6">
+                                                <div class="uae-input-group">
+                                                    <label for="" class="uae-group-label">Applicant Full Name <span class="text-danger">*</span></label>
+                                                    <input type="text" class="form-control shadow-none uae-input" placeholder="Applicant Full Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="uae-input-group">
+                                                    <label for="" class="uae-group-label">Your Email Address <span class="text-danger">*</span></label>
+                                                    <input type="email" class="form-control shadow-none uae-input" placeholder="Your Email Address">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="uae-input-group">
+                                                    <label for="" class="uae-group-label">Marital Status <span class="text-danger">*</span></label>
+                                                    <select class="form-select shadow-none uae-input">
+                                                        <option value="" selected disabled>Select Marital Status</option>
+                                                        <option value="Single">Single</option>
+                                                        <option value="Single">Married</option>
+                                                        <option value="Single">Other</option>
+                                                      
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="uae-input-group">
+                                                    <label for="" class="uae-group-label">Passport Number <span class="text-danger">*</span></label>
+                                                    <input type="text" class="form-control shadow-none uae-input" placeholder="Passport Number ">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="uae-input-group">
+                                                    <label for="" class="uae-group-label">Mobile / WhatsApp Number <span class="text-danger">*</span></label>
+                                                    <div>
+                                                        <input id="phone" name="phone" type="tel" value="" class="form-control shadow-none uae-input w-100" placeholder="Mobile / WhatsApp Number"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="uae-input-group">
+                                                    <label for="" class="uae-group-label">Profession  <span class="text-danger">*</span></label>
+                                                    <input type="text" class="form-control shadow-none uae-input" placeholder="Profession ">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="uae-input-group">
+                                                    <label for="" class="uae-group-label">Travel Date To UAE  <span class="text-danger">*</span></label>
+                                                    <div class="date-input position-relative bg-white">
+                                                        <input type="text" id="datepicker" class="form-control bg-transparent position-relative z-2 shadow-none uae-input" placeholder="Select Date">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="uae-input-group"> 
+                                                    <label for="" class="uae-group-label">Purpose of Travel  <span class="text-danger">*</span></label>
+                                                    <input type="text" class="form-control shadow-none uae-input" placeholder="Purpose of Travel ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-4 pt-md-3 pt-1">
+                                <div class="fw-bold text-center upload-heading">
+                                    Please Upload The Following Documents
+                                </div>
+                                <hr class="my-2">
+                                <div class="accepted-format">
+                                   <span class="fw-semibold"> Accepted Formats :</span> WORD, PDF, JPG or PNG    
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <div class="row g-3">
+                                    <div class="col-lg-3 col-md-4">
+                                        <form action="/upload" class="dropzone bg-white text-center" id="myDropzone">
+                                            <div class="dropzone-title text-center">
+                                                Upload Passport
+                                            </div>
+                                            <div class="dz-message" data-dz-message>
+                                                <span>
+                                                    <img src="assets/img/passport.svg" alt="passport" class="dropzone-img">
+                                                </span>
+                                            </div>
+                                        </form>
+            
+                                    </div>
+                                    <div class="col-lg-3 col-md-4">
+                                        <form action="/upload" class="dropzone bg-white text-center" id="myDropzone">
+                                            <div class="dropzone-title text-center">
+                                                Upload Photo
+                                            </div>
+                                            <div class="dz-message" data-dz-message>
+                                                <span>
+                                                    <img src="assets/img/upload-photo.svg" alt="photo" class="dropzone-img">
+                                                </span>
+                                            </div>
+                                        </form>
+            
+                                    </div>
+                                    <div class="col-lg-3 col-md-4">
+                                        <form action="/upload" class="dropzone bg-white text-center" id="myDropzone">
+                                            <div class="dropzone-title text-center">
+                                                Other Document/ National ID
+                                            </div>
+                                            <div class="dz-message" data-dz-message>
+                                                <span>
+                                                    <img src="assets/img/other-document.svg" alt="other document" class="dropzone-img">
+                                                </span>
+                                            </div>
+                                        </form>
+            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-4 pt-md-2">
+                                <div class="form-note-card bg-light border rounded-2">
+                                    <p class="file-note mb-0"><b>NOTE:</b> Upload of passport and photograph are not mandatory to complete the visa application form. You can provide us these documents later also on email: <a href="mailto:info@onlinedubaivisa.com">info@onlinedubaivisa.com</a> or on WhatsApp <a href="https://api.whatsapp.com/send?phone=971-565016625"> +971-565016625 </a></p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class=" d-flex align-items-center justify-content-center flex-wrap form-btn-main">
+                                    <div class="">
+                                        <button type="button" class="btn form-btn form-btn-two d-flex align-items-center justify-content-center" id="saveapplication">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- edit co-applicant modal  -->
+    <div class="modal fade edit-modal pe-0" id="editmodal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered mx-auto">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fw-bold" id="exampleModalLabel">Edit Profile</div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <section class="visa-form-section mt-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="visa-form-card bg-light mt-0">
+                                    <div class="form-inner-heading text-center">
+                                        Please Provide The Following Details
+                                    </div>
+                                    <form action="">
+                                        <div class="row mt-md-3 mt-2 g-3">
+                                            <div class="col-md-6">
+                                                <div class="uae-input-group">
+                                                    <label for="" class="uae-group-label">Applicant Full Name <span class="text-danger">*</span></label>
+                                                    <input type="text" class="form-control shadow-none uae-input" placeholder="Applicant Full Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="uae-input-group">
+                                                    <label for="" class="uae-group-label">Passport Number <span class="text-danger">*</span></label>
+                                                    <input type="text" class="form-control shadow-none uae-input" placeholder="Passport Number ">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="uae-input-group">
+                                                    <label for="" class="uae-group-label">Profession  <span class="text-danger">*</span></label>
+                                                    <input type="text" class="form-control shadow-none uae-input" placeholder="Profession ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-4 pt-md-3 pt-1">
+                                <div class="fw-bold text-center upload-heading">
+                                    Please Upload The Following Documents
+                                </div>
+                                <hr class="my-2">
+                                <div class="accepted-format">
+                                   <span class="fw-semibold"> Accepted Formats :</span> WORD, PDF, JPG or PNG    
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <div class="row g-3">
+                                    <div class="col-lg-3 col-md-4">
+                                        <form action="/upload" class="dropzone bg-white text-center" id="myDropzone">
+                                            <div class="dropzone-title text-center">
+                                                Upload Passport
+                                            </div>
+                                            <div class="dz-message" data-dz-message>
+                                                <span>
+                                                    <img src="assets/img/passport.svg" alt="passport" class="dropzone-img">
+                                                </span>
+                                            </div>
+                                        </form>
+            
+                                    </div>
+                                    <div class="col-lg-3 col-md-4">
+                                        <form action="/upload" class="dropzone bg-white text-center" id="myDropzone">
+                                            <div class="dropzone-title text-center">
+                                                Upload Photo
+                                            </div>
+                                            <div class="dz-message" data-dz-message>
+                                                <span>
+                                                    <img src="assets/img/upload-photo.svg" alt="photo" class="dropzone-img">
+                                                </span>
+                                            </div>
+                                        </form>
+            
+                                    </div>
+                                    <div class="col-lg-3 col-md-4">
+                                        <form action="/upload" class="dropzone bg-white text-center" id="myDropzone">
+                                            <div class="dropzone-title text-center">
+                                                Other Document/ National ID
+                                            </div>
+                                            <div class="dz-message" data-dz-message>
+                                                <span>
+                                                    <img src="assets/img/other-document.svg" alt="other document" class="dropzone-img">
+                                                </span>
+                                            </div>
+                                        </form>
+            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-4 pt-md-2">
+                                <div class="form-note-card bg-light border rounded-2">
+                                    <p class="file-note mb-0"><b>NOTE:</b> Upload of passport and photograph are not mandatory to complete the visa application form. You can provide us these documents later also on email: <a href="mailto:info@onlinedubaivisa.com">info@onlinedubaivisa.com</a> or on WhatsApp <a href="https://api.whatsapp.com/send?phone=971-565016625"> +971-565016625 </a></p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class=" d-flex align-items-center justify-content-center flex-wrap form-btn-main">
+                                    <div class="">
+                                        <button type="button" class="btn form-btn form-btn-two d-flex align-items-center justify-content-center" id="saveapplication">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- navbar drop js  -->
+    <script>
+        document.getElementById('navbtn').addEventListener('click', function() {
+            // Toggle class on the button itself
+            this.classList.toggle('rotate');
+            // Toggle class on other div
+            document.getElementById('navmenu').classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- datepicker js  -->
+    <script>
+        flatpickr("#datepicker", {
+            disable: [
+                function(date) {
+                    // Disable dates before today
+                    const today = new Date();
+                    today.setHours(0, 0, 0, 0); // Set hours to start of the day
+                    return (date < today);
+                }
+            ],
+            dateFormat: "Y-m-d",
+            onChange: function(selectedDates, dateStr, instance) {
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                if (selectedDates.length === 1 && selectedDates[0].getTime() === today.getTime()) {
+                    instance.set("disable", []);
+                    document.getElementById("datepicker").classList.add("custom-class");
+                } else {
+                    instance.set("disable", [
+                        function(date) {
+                            const today = new Date();
+                            today.setHours(0, 0, 0, 0);
+                            return (date < today);
+                        }
+                    ]);
+                    document.getElementById("datepicker").classList.remove("custom-class");
+                }
+            }
+        });
+    </script>
+  
+</body>
+</html>

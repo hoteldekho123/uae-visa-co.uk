@@ -1,0 +1,377 @@
+:root {
+    --theming1 :#d71921;
+    --theming1-hover :#d63606;
+}
+body {
+    font-family: "Nunito", sans-serif;
+}
+html, body {
+    overflow-x: hidden;
+}
+.common-gap {
+    margin-top: 50px;
+}
+.common-padding {
+    padding-top: 45px;
+    padding-bottom: 52px;
+}
+
+/* heading  */
+.heading {
+    font-size: 25px;
+    font-weight: 700;
+}
+.heading::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -2px;
+    height: 3px;
+    border-radius: 5px;
+    width: 100px;
+    background-color: var(--theming1);
+}
+
+/* theme btn  */
+.theme-btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--theming1);
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    gap: 6px;
+}
+.theme-btn:hover {
+    background-color:var(--theming1-hover);
+}
+.theme-btn i {
+    transition: all 0.3s ease-in-out;
+}
+.theme-btn:hover i {
+    transform: translateX(5px);
+}
+
+
+/* whatsapp button */
+.whatsapp-btn {
+    background: #25d366;
+    color: white;
+    bottom: 25px;
+    left: 25px;
+    font-size: 37px;
+    z-index: 10;
+    height: 70px;
+    width: 70px;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+.whatsapp-btn::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    padding: 20px;
+    border: 5px solid #25d366;
+    opacity: 0.75;
+    animation-name: pulse-border;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+@keyframes pulse-border {
+    0% {
+      padding: 25px;
+      opacity: 0.75;
+    }
+    75% {
+      padding: 50px;
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+
+/* ellipsis  */
+.ellipsis3 {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.ellipsis4 {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.ellipsis5 {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/* scroll to top  */
+.progress-wrap {
+    right: 30px;
+    bottom: 30px;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2);
+    z-index: 6;
+    opacity: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: translateY(15px);
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.progress-wrap.active-progress {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.progress-wrap::after {
+    position: absolute;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f062';
+    text-align: center;
+    line-height: 46px;
+    font-size: 18px;
+    color: #1f2029;
+    left: 0;
+    top: 0;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    color: var(--theming1);
+}
+.lightScrollIcon::after {
+    color: #ecedf3 !important;
+}
+.progress-wrap svg path {
+    fill: none;
+}
+.progress-wrap svg.progress-circle path {
+    stroke: var(--theming1);
+    stroke-width: 5;
+    box-sizing: border-box;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+
+/* select 2  */
+.select2-container {
+    width: 100% !important;
+    display: block;
+}
+.select2 .select2-selection {
+    height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+.select2 .select2-selection__rendered {
+    font-weight: 600;
+}
+.select2 .select2-selection__arrow {
+    height: 100% !important;
+    top: 0 !important;
+}
+.select2-container--default .select2-selection--single {
+    border-color: #c9c9c9 !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 15px;
+}
+.select2-dropdown {
+    border-color: #c9c9c9 !important;
+}
+.select2-results__option {
+    font-size: 15px;
+    font-weight: 500;
+}
+.select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: var(--theming1) !important;
+    color: #ffff !important;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #ddd !important;
+    color: #000 !important;
+}
+
+
+/* media query start */
+@media (max-width:991px){
+    .heading {
+        font-size: 23px;
+    }
+}
+@media (max-width:767px){
+    .common-gap {
+        margin-top: 40px;
+    }
+    .heading {
+        font-size: 20px;
+        line-height: 27px;
+        padding-bottom: 3px;
+    }
+    .heading::before {
+        bottom: 0;
+        height: 2.5px;
+        width: 80px;
+    }
+    .whatsapp-btn {
+        height: 55px;
+        width: 55px;
+        bottom: 15px;
+        font-size: 29px;
+        left: 15px;
+    }
+    .progress-wrap {
+        right: 15px;
+        bottom: 20px;
+    }
+    .common-padding {
+        padding-top: 35px;
+        padding-bottom: 42px;
+    }
+    @keyframes pulse-border {
+        0% {
+          padding: 25px;
+          opacity: 0.75;
+        }
+        75% {
+          padding: 40px;
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+    }
+}
+
+@media (max-width:576px){
+    .heading {
+        font-size: 18px;
+    }
+}
+/* media query end */
+
+
+
+/* page heading section start  */
+.page-heading-section {
+    padding-block: 90px;
+    background: url(../img/aboutus-bg.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.page-heading-section::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #3b3b3b54;
+}
+.page-heading-section .page-heading {
+    font-size: 38px;
+    font-weight: 700;
+    color: #fff;
+}
+.page-heading-section .page-title {
+    color: #ffff;
+    font-weight: 600;
+}
+.visatype-heading-section {
+    padding-block: 80px;
+    background: url(../img/dubai-bg-4.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@media (max-width:767px){
+    .page-heading-section {
+        padding-block: 60px;
+    }
+    .visatype-heading-section {
+        padding-block: 50px;
+    }
+    .page-heading-section .page-heading {
+        font-size: 24px;
+    }
+}
+/* page heading section end */
+
+
+/* breadcrumb section start  */
+.breadcrumb-section {
+    padding-block: 14px;
+}
+.breadcrumb-section .breadcrumb-link,
+.breadcrumb-section .breadcrumb-link a{
+    font-weight: 600;
+    font-size: 15px;
+    gap: 4px;
+    color: #505050;
+}
+.breadcrumb-section .breadcrumb-link a i,
+.breadcrumb-section .breadcrumb-link i {
+    color: #5c5c5c;
+}
+.breadcrumb-section .breadcrumb-list {
+    gap: 8px;
+}
+.breadcrumb-section .breadcrumb-link .home-icon {
+    margin-top: -2px;
+}
+.breadcrumb-section .breadcrumb-link.active {
+    color: var(--theming1);
+}
+/* breadcrumb section end  */
+
+
+
+/* apply common button section start */
+.common-btn-section .common-blink-btn {
+    background-image: linear-gradient(to bottom,#8e0a0a 0,#b40d14 99%);
+    animation: blinkbtn 5s linear infinite;
+    font-weight: 600;
+    color: #ffff;
+    padding: 10px 40px;
+    border-radius: 30px;
+    border:3px solid #ffff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.common-btn-section .common-blink-btn:active {
+    animation: none;
+}
+@keyframes blinkbtn {
+  12.5% { background-image: linear-gradient(to right, #8e0a0a, #dc3545); }
+  25% { background-image: linear-gradient(to right, #b40d14, #8e0a0a); }
+  37.5% { background-image: linear-gradient(to right, #dc3545, #b40d14); }
+  50% { background-image: linear-gradient(to right, #8e0a0a, #dc3545); }
+  62.5% { background-image: linear-gradient(to right, #b40d14, #8e0a0a); }
+  75% { background-image: linear-gradient(to right, #dc3545, #b40d14); }
+  87.5% { background-image: linear-gradient(to right, #8e0a0a, #dc3545); }
+  100% { background-image: linear-gradient(to right, #b40d14, #8e0a0a);}
+}
+/* apply common button section start */
+

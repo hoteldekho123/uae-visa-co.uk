@@ -1,0 +1,718 @@
+/* navbar media query start */
+@media (max-width:1200px){
+    .navbar .navbar-nav {
+        gap: 20px;
+    }
+    .navbar .nav-link.active {
+        color: var(--theming1) !important;
+    }
+    .nav-offcanvas {
+        max-width: 320px;
+    }
+    .nav-offcanvas .offcanvas-logo {
+        height: 30px;
+    }
+    .nav-offcanvas .btn-close {
+        font-size: 14px;
+        color: #000;
+    }
+    .nav-offcanvas .nav-link::before {
+        display: none;
+    }
+    .nav-offcanvas .nav-link {
+        color: #000;
+        padding: 0;
+    }
+    .navbar .navbar-nav {
+        gap: 20px;
+    }
+    .navbar .nav-contact-link-two {
+        color: #000;
+    }
+    .navbar .nav-contact-link i {
+        color: var(--theming1) !important;
+    }
+    .navbar .nav-link i {
+        transition: all 0.3s ease-in-out;
+    }
+    .navbar .nav-link.rotate i {
+        transform: rotate(-180deg);
+    }
+    .navbar .nav-link.rotate {
+        color: var(--theming1);
+    }
+    .navbar .nav-item {
+        padding: 0;
+    }
+    .navbar .drop-menu {
+        max-height: 0;
+        border: 0 !important;
+        margin-top: 0 !important;
+    }
+    .navbar .drop-menu.hidden {
+        margin-top: 10px !important;
+        border: 1px solid #dee2e6 !important;
+        max-height: 494px !important;
+    }
+}
+@media (max-width:767px){
+    .navbar .navbar-logo {
+        height: 35px;
+    }
+}
+@media (max-width:576px) {
+    .navbar .navbar-nav {
+        gap: 20px;
+    }
+    .navbar .header-content-link {
+        height: 30px;
+        width: 30px;
+        font-size: 14px;
+    }
+}
+/* navbar media query end */
+
+
+/* hero section media query start */
+@media (max-width:991px){
+    .hero-section {
+        height: 500px;
+    }
+}
+@media (max-width:767px){
+    .hero-section {
+        height: auto;
+        padding-top: 115px;
+        padding-bottom: 80px;
+    }
+    .search-card {
+        padding: 20px;
+    }
+    .search-card .hero-heading {
+        font-size: 20px;
+    }
+}
+@media (max-width:576px){
+    .hero-section {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+    .search-card .theme-btn {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+/* hero section media query end */
+
+
+/* hero cta section start */
+@media (max-width:767px){
+    .hero-signup-cta .content-wrapper {
+        padding: 0px;
+    }
+    .hero-signup-cta .step-wrapper {
+        padding: 13px;
+        border-top: 1px solid #e7e7e7;
+    }
+    .hero-signup-cta .step-wrapper .number {
+        font-size: 26px;
+    }
+    .tab-main .tabs__nav-item {
+        font-size: 16px;
+    }
+}
+/* hero cta section end */
+
+
+/* price section media query start */
+@media (max-width:767px){
+    .price-section .tab-main {
+        width: 100%;
+    }
+    .price-section .tab-main .tabs__nav-list {
+        gap: 10px;
+    }
+    .pricing-card .pricing-header span {
+        font-size: 24px;
+    }
+    .pricing-card {
+        padding: 13px;
+    }
+    .pricing-card .price-card-data {
+        padding-block: 11px;
+    }
+    .pricing-card .dubai-visa-price {
+        font-size:35px;
+    }
+}
+/* price section media query end */
+
+
+/* content card section start */
+@media (max-width:767px){
+    .content-card p {
+        font-size: 15px;
+        line-height: 29px;
+    }
+    .content-card li {
+        line-height: 26px;
+        font-size: 15px;
+    }
+    .content-card ul, .content-card ol {
+        gap: 5px;
+    }
+    .content-section .content-card {
+        padding: 12px;
+    }
+    .content-card h2 {
+        font-size: 18px;
+        line-height: 27px;
+        padding-top: 4px;
+    }
+    .content-card h3 {
+        font-size: 16px;
+        padding-top: 5px;
+        margin-bottom: 6px;
+    }
+    .content-section .content-note {
+        font-size: 14px;
+        padding: 7px;
+        line-height: 25px;
+    }
+}
+/* content card section end */
+
+
+/* why choose us section start */
+@media (max-width:767px){
+    .whychoose-card .whychoose-title {
+        font-size: 16px;
+    }
+}
+/* why choose us section end */
+
+
+/* country section start */
+@media (max-width:1200px){
+    .country-section .country-inner>* {
+        flex: 0 0 15.70%;
+        width: 15.70%;
+    }
+}
+@media (max-width:992px){
+    .country-section .country-inner>* {
+        flex: 0 0 18.70%;
+        width: 18.70%;
+    }
+}
+@media (max-width:767px){
+    .country-section .country-inner>* {
+        flex: 0 0 23.20%;
+        width: 23.20%;
+    }
+}
+@media (max-width:576px){
+    .country-section .country-inner>* {
+        flex: 0 0 48.20%;
+        width: 48.20%;
+    }
+}
+/* country section end */
+
+
+/* testimonial section start */
+@media (max-width:767px){
+    .tetimonial-section .allreview {
+        font-size: 15px;
+    }
+    .testimonial-section .allreview .review-img {
+        height: 24px;
+    }
+    .testimonial-section .testimonial-card .card-data {
+        padding: 12px;
+    }
+    .testimonial-section .testimonial-card .user-img {
+        height: 38px;
+        width: 38px;
+        font-size: 16px;
+    }
+    .testimonial-card .user-name {
+        font-size: 15px;
+    }
+    .testimonial-section .testimonial-card .star-img {
+        width: 110px;
+    }
+}
+/* testimonial section end */
+
+
+/* faq section start */
+@media (max-width:767px){
+    .faq-section .accordion-button {
+        font-size: 15px;
+    }
+    .faq-section .accordion-button, .faq-section .accordion-body {
+        padding: 12px;
+    }
+    .faq-section .accordion-body {
+        padding-bottom: 3px;
+    }
+    .faq-section .accordion-body p {
+        margin-bottom: 9px;
+        font-size: 15px;
+        line-height: 28px;
+    }
+}
+/* faq section end */
+
+
+/* footer cta section start  */
+@media (max-width:767px){
+    .footer-cta {
+        padding-block: 22px;
+    }
+}
+/* footer cta section end */
+
+
+/* footer start  */
+@media (max-width:991px){
+    .footer .footer-logo {
+        margin-top: 0px;
+    }
+}
+@media (max-width:767px){
+    .footer {
+        padding-block: 35px;
+    }
+    .footer .footer-list {
+        padding-top: 5px;
+        gap: 10px;
+    }
+    .footer .footer-link {
+        font-size: 15px;
+    }
+    .footer .footer-contact-list {
+        gap: 12px;
+    }
+    .footer .footer-contact .contact-icon {
+        font-size: 15px;
+    }
+}
+/* footer end */
+
+
+/* copyright section start */
+@media (max-width:767px){
+    .footer .footer-logo {
+        height: 32px;
+    }
+    .copyright-section {
+        padding-block: 12px;
+    }
+    .copyright-section .copyright-text p {
+        font-size: 15px;
+    }
+}
+/* copyright section end */
+
+
+/* breadcrumb section start */
+@media (max-width:767px){
+    .breadcrumb-section .breadcrumb-link, .breadcrumb-section .breadcrumb-link a {
+        font-size: 14px;
+    }
+    .breadcrumb-section {
+        padding-block: 12px;
+    }
+}
+/* breadcrumb section end */
+
+
+/* visa application form section start */
+@media (max-width:991px){
+    .apply-section .form-price {
+        position: unset;
+        text-align: end;
+        margin-top: 8px !important;
+    }
+}
+@media (max-width:767px){
+    .visa-form-section {
+        margin-top: 20px;
+    }
+    .visa-form-section .visa-form-heading {
+        font-size: 24px;
+    }
+    .visa-form-section .visa-form-heading::before {
+        width: 95px;
+    }
+    .visa-form-section .visa-form-card {
+        margin-top: 20px;
+        padding: 14px;
+    }
+    .visa-form-card .form-inner-heading {
+        font-size: 16px;
+    }
+    .visa-form-card .form-price {
+        margin-top: 0;
+    }
+    .uae-input-group .uae-group-label {
+        margin-bottom: 3px;
+        font-size: 14px;
+    }
+    .visa-form-section .upload-heading {
+        font-size: 17px;
+    }
+    .visa-form-section .accepted-format {
+        font-size: 14px;
+    }
+    .visa-form-section .form-btn-main {
+        margin-top: 25px;
+        gap: 12px;
+    }
+    .apply-section .form-price {
+        font-size: 15px;
+    }
+}
+@media (max-width:576px){
+    .visa-form-section .visa-form-heading {
+        font-size: 19px;
+    }
+    .visa-form-section .visa-form-heading::before {
+        width: 75px;
+    }
+}
+/* visa application form section end */
+
+
+/* ***** fujairah visa page css start ***** */
+
+/* hero section start */
+@media (max-width:767px){
+    .country-hero-section {
+        height: auto;
+        padding-top: 85px;
+        padding-bottom: 80px;
+    }
+}
+@media (max-width:576px){
+    .country-hero-section {
+        padding-top: 60px;
+        padding-bottom: 70px; 
+    }
+}
+/* hero section end */
+
+/* ***** fujairah visa page css end ***** */
+
+
+
+/* document required section start */
+@media (max-width:767px){
+    .choose-section .choose-inner {
+        gap: 10px;
+    }
+    .document-required-section .heading {
+        line-height: 29px;
+    }
+    .choose-card {
+        min-height: 50px;
+        gap: 10px;
+        position: relative;
+        overflow: hidden;
+        padding-left: 60px;
+        padding-block: 5px;
+        font-size: 15px;
+        padding-right: 5px;
+    }
+    .choose-card .choose-icon {
+        max-width: 50px;
+        min-width: 50px;
+        height: 200%;
+        padding: 14px;
+        position: absolute;
+        left: 0;
+    }
+}
+/* document required section end */
+
+
+/* important information section start */
+@media (max-width:767px){
+    .impo-info-section .heading {
+        line-height: 29px;
+    }
+    .impo-info-card li {
+        line-height: 25px;
+        font-size: 15px;
+    }
+    .impo-info-card ul {
+        gap: 5px;
+    }
+}
+/* important information section end */
+
+
+/* blog home section css start */
+@media (max-width:767px){
+    .blog-card .blog-card-img {
+        height: 250px;
+    }
+    .blog-card .blog-icon {
+        font-size: 14px;
+    }
+    .blog-card .blog-card-heading, .blog-card .blog-card-heading >* {
+        font-size: 16px;
+        line-height: normal;
+    }
+    .blog-card .blog-card-content {
+        height: 70px !important;
+    }
+}
+/* blog home section css end */
+
+
+
+/* blog card two section start */
+@media (max-width:767px) {
+    .blog-home-card .blog-home-card-img {
+        height: 200px;
+    }
+    .blog-home-card .blog-home-card-content {
+        padding: 10px;
+    }
+    .blog-home-card .blog-home-date-inner {
+        font-size: 30px;
+    }
+}
+/* blog card two section end */
+
+
+/* blog detail page start */
+@media (max-width:767px){
+    .blog-detail-section .blog-detail-img {
+        height: 270px;
+    }
+    .blog-detail-section .blog-detail-inner {
+        padding: 8px 0px 0;
+    }
+    .blog-detail-section .blog-detail-heading {
+        font-size: 19px;
+    }
+    .blog-detail-section .blog-detail-content h2 {
+        font-size: 18px;
+        margin-bottom: 8px;
+        padding-top: 0px ;
+    }
+    .blog-detail-section .blog-detail-content h3 {
+        font-size: 16px;
+        margin-bottom: 7px;
+        padding-top: 0px ;
+    }
+}
+@media (max-width:576px){
+    .blog-detail-section .blog-detail-img {
+        height: 210px;
+    }
+}
+/* blog detail page end */
+
+
+/* track page start  */
+@media (max-width:767px){
+    .track-card {
+        padding: 13px;
+    }
+    .track-section .track-title {
+        font-size: 15px;
+        line-height: 27px;
+    }
+}
+  /* track page end */
+
+
+/* contact us page start  */
+@media (max-width:767px){
+    .contact-form {
+        padding: 12px;
+    }
+    .contact-section .contact-heading {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}
+  /* contact us page end */
+
+
+/* payment page start */
+@media (max-width:767px){
+    .payment-card {
+        padding: 12px;
+    }
+    .payment-card .payment-heading {
+        font-size: 17px;
+    }
+    .payment-card .uae-input-group {
+        flex-direction: column;
+        gap: 1px;
+        align-items: start;
+    }
+    .payment-card .payment-check-main {
+        gap: 10px;
+    }
+    .payment-card .uae-input-group label {
+        width: 40%;
+        white-space: nowrap;
+    }
+    .payment-card .payment-heading::after {
+        height: 2px;
+        width: 72px;
+    }
+    .payment-card .payment-img {
+        height: 28px;
+    }
+    .payment-card .theme-btn {
+        font-size: 15px;
+    }
+}
+/* payment page end */
+
+
+/* payment detail section start */
+@media (max-width:767px){
+    .payment-detail-card .payment-detail-header {
+        padding: 10px;
+    }
+    .payment-detail-card .payment-detail-heading {
+        font-size: 17px;
+        line-height: normal;
+    }
+    .payment-detail-card .payment-price-total {
+        font-size: 15px;
+    }
+    .payment-detail-card .table th {
+        font-size: 15px;
+    }
+    .payment-detail-card .table td {
+        font-size: 14px;
+    }
+    .payment-detail-card .payment-detail-body {
+        padding: 10px;
+    }
+    .payment-detail-card .payment-total-title {
+        font-size: 16px;
+    }
+    .payment-detail-card .payment-total-price {
+        font-size: 17px;
+    }
+    .payment-check-card .payment-check-title {
+        font-size: 15px;
+    }
+    .payment-detail-card .payment-inner-heading {
+        font-size: 17px;
+    }
+    .payment-detail-card .payment-detail-data {
+        padding-block: 7px;
+    }
+    .payment-detail-card .payment-total-main {
+        margin-top: 15px;
+    }
+    .payment-sidebar .theme-btn {
+        font-size: 15px;
+    }
+    .payment-sidebar-card img {
+        height: 30px;
+    }
+    .payment-detail-card .payment-detail-title-two {
+        font-size: 14px;
+    }
+    .payment-detail-card .payment-detail-title {
+        font-size: 15px;
+    }
+}
+/* payment detail section end */
+
+
+/* edit modal start */
+@media (max-width:767px){
+    .edit-modal .modal-dialog {
+        max-width: 95%;
+    }
+    .edit-modal .modal-title {
+        font-size: 18px;
+    }
+}
+/* edit modal end */
+
+
+/* how to apply section start */
+@media (max-width:991px){
+    .howapply-img {
+        border-radius: 0 ;
+        box-shadow:none;
+    }
+    .howapply-card {
+        border-radius: 0;
+        box-shadow:none;
+    }
+    .howapply-main {
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        border-radius: 8px;
+        margin-inline: 0;
+        overflow: hidden;
+    }
+}
+@media (max-width:767px){
+    .howapply-card {
+        padding: 12px;
+    }
+    .howapply-card .howapply-card-title {
+        font-size: 15px;
+        line-height: 26px;
+    }
+    .howapply-card .howapply-card-content p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .howto-apply .how-apply-inner {
+        gap: 30px;
+    }
+}
+@media (max-width:576px){
+    .howapply-img {
+        height: 160px !important;
+    }
+    .howapply-img img {
+        object-fit: cover;
+    }
+    .howto-apply .step-count {
+        height: 42px;
+        width: 120px;
+        margin-bottom: 10px;
+    }
+}
+  /* how to apply section end */
+
+
+  /* thank you section start */
+@media (max-width:767px){
+    .thanks-section {
+        margin-top: 45px;
+    }
+    .thanks-card .thanks-heading {
+        font-size: 22px;
+        padding-bottom: 3px;
+    }
+    .thanks-card {
+        padding: 15px;
+    }
+    .thanks-card .thanks-title {
+        margin-top: 16px;
+    }
+    .thanks-card .thanks-icon {
+        font-size: 95px;
+        line-height: 95px;
+    }
+}
+  /* thank you section end */
