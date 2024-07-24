@@ -404,25 +404,6 @@ DOM.tabsNav.addEventListener('click', e => {
   }
 });
 
-// Add event listener for window resize
-window.addEventListener('resize', () => {
-  // Check if window width is less than or equal to 767px
-  if (window.innerWidth <= 767) {
-    // Change flex-direction to vertical
-    DOM.tabsNav.style.flexDirection = 'column';
-    // Set tabs__nav-item width to 100%
-    DOM.tabsNavItems.forEach(item => {
-      item.style.width = '100%';
-    });
-  } else {
-    // Reset flex-direction and width
-    DOM.tabsNav.style.flexDirection = 'row';
-    DOM.tabsNavItems.forEach(item => {
-      item.style.width = '';
-    });
-  }
-});
-
 
 
 // price card class add 
@@ -443,11 +424,11 @@ function readMore(ele,eve){
   eve.preventDefault();
   var txt = document.querySelector(".read_more_text");
   txt.classList.toggle("ellipsis3");
-  
   if(txt.classList.contains("ellipsis3")){
-      ele.innerText = "Read More";
-  }else{
-      ele.innerText = "Read Less";
+    ele.innerText = "Read More";
+  }
+  else{
+    ele.innerText = "Read Less";
   }
 }
 

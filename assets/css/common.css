@@ -5,9 +5,9 @@
 body {
     font-family: "Nunito", sans-serif;
 }
-html, body {
+/* html, body {
     overflow-x: hidden;
-}
+} */
 .common-gap {
     margin-top: 50px;
 }
